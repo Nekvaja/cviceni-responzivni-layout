@@ -34,3 +34,47 @@ body {
 	- 640px
 	- 1000px
 */
+
+/* výchozí nastavení */
+  .kontejner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* BP 640px */
+  @media (min-width: 640px) {
+  .kontejner {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .horni {
+    width: 100%;
+  }
+
+  .prvni,
+  .druhy {
+    width: 50%;
+  }
+  }
+/* BP 1000px */
+  @media (min-width: 1000px) {
+    .kontejner {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+    }
+  
+    .horni {
+      width: 100%;
+    }
+  
+    .prvni,
+    .druhy,
+    .treti {
+      width: 30%;
+      flex-grow: 1;
+    }
+    }
